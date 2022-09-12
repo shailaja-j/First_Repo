@@ -2,7 +2,7 @@
 Documentation  A simple for loop example.
 *** Variables ***
 
-@{ROBOTS}=   p
+@{ROBOTS}=   patil123
 
 *** Test Cases ***
  Exit a loop on condition
