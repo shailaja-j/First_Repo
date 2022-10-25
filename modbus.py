@@ -9,7 +9,7 @@ client = ModbusSerialClient(
 
     baudrate=9600,
 
-    timeout=0.05,
+    #timeout=0.05,
 
     parity='N',
 
@@ -38,5 +38,6 @@ def func_04(address, count):
     else:
         print('cannot connect to the Modbus Server/Slave')
 
-func_04(30000,2)
+func_04(30002,2)
+
 
