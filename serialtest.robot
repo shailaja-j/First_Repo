@@ -8,7 +8,7 @@ Test case for connection
        log             ${connection}
     Should Be Equal     ${connection}   ${1}
 
-#test cases for read only register with function code 4(input register)
+# test cases for read only register with function code 4(input register)
 # Test Cases for status
 
 #     @{status}=        Create List    ${4660 }    ${22136}
@@ -21,7 +21,7 @@ Test Cases for POUT
 
     @{pout}=        Create List    ${17142}    ${58982}
         Log List    ${pout}
-    @{fun}=        modbus.Func 04    ${30002}    ${2}
+    @{fun}=        modbus.Func 04    ${30000}    ${2}
         Log List    ${fun}
     Lists Should Be Equal    ${fun}    ${pout}
 
