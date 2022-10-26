@@ -7,7 +7,6 @@ Test case for connection
     ${connection}=  modbus.connection  
     log             ${connection}
     Should Be Equal     ${connection}   ${1}
-
 # test cases for read only register with function code 4(input register)
 Test Cases for status
 
