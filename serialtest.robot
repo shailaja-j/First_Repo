@@ -21,7 +21,7 @@ Test Cases for POUT
 
     @{pout}=  Create List    ${17142}    ${58982}
         Log List    ${pout}
-    @{fun}=   modbus.func_04  ${30000}  ${2}
+    @{fun}=   modbus.func_04  ${30002}  ${2}
         Log List  ${fun}
     Lists Should Be Equal    ${fun}    ${pout}
 
