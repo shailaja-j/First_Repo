@@ -1,11 +1,11 @@
 from pymodbus.client.sync import ModbusSerialClient
-from pymodbus.pdu import ModbusResponse, ExceptionResponse
+from pymodbus.pdu import ModbusResponse , ExceptionResponse
 
 client = ModbusSerialClient(
 
     method='rtu',
 
-    port='COM5',
+    port='COM2',
 
     baudrate=9600,
 
@@ -37,6 +37,6 @@ def func_04(address, count):
     else:
         print('cannot connect to the Modbus Server/Slave')
 
-func_04(30000,2)
+func_04(30002,2)
 
 
