@@ -5,7 +5,7 @@ client = ModbusSerialClient(
 
     method='rtu',
 
-    port='COM1',
+    port='COM5',
 
     baudrate=9600,
 
@@ -18,7 +18,6 @@ client = ModbusSerialClient(
     bytesize=8
 
 )
-
 def connection():
     if not client.connect():
         return 0
