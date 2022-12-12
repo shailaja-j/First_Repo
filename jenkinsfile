@@ -7,10 +7,11 @@ pipeline {
                   }
         }
         stage('build'){
-            steps{    
-            git branch: 'main', credentialsId: '302c3d09-ccee-45ba-88e6-e90479f13f3f', url: 'https://github.com/shailaja-j/First_Repo.git'
+            steps{ 
+            emailext body: 'email extented test', subject: 'email extented test', to: 'shailaja.p@utthunga.com' 
             }
         }
+
         
         stage('run test'){
             steps{
